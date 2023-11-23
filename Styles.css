@@ -1,0 +1,286 @@
+/* Importar la fuente Montserrat desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #116BA3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+  flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    width:130px;
+    height: auto;
+    margin-bottom: 20px;
+}
+h1{
+    margin-top: 0;
+}
+
+/* Estilos para la pestaña desplegable */
+.dropdown {
+    position: absolute;
+    bottom: 0px; /* Ajustar la posición vertical */
+    left: 20%; /* Centrar horizontalmente */
+    transform: translateX(-40%);
+
+}
+/* Estilo para el botón del menú */
+.dropbtn {
+    background-color: #116BA3;
+    color: white;
+    padding: 20px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #116BA3;
+    transform: scale(1.30); /* Aumentar ligeramente el tamaño al pasar el mouse */
+}
+
+/* Efecto de sombra al hacer clic */
+.dropbtn:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.dropbtn {
+    background-color: #116BA3;
+    color: #fffdfd;
+    padding: 0px 20px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #116BA3;
+    font-weight: bold;
+}
+/* Estilos para la flecha junto al botón del menú desplegable */
+.dropbtn img {
+    margin-right: 5px; /* Ajusta el espacio entre la imagen y el texto del botón */
+    vertical-align: middle;
+    margin-right: 2px; 
+     /* Alinea verticalmente la imagen con el texto */
+}
+
+.show {
+    display: block;
+}
+/* Estilo para el campo de búsqueda */
+.search-field {
+    display: none; /* Por defecto oculto */
+}
+
+/* Estilo para mostrar el campo de búsqueda cuando se activa */
+.show-search {
+    display: block;
+}
+
+
+/* Estilo para la sección de selección de Carrera */
+.genre-selection {
+    background-color: #116BA3;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.genre-selection h2 {
+    font-size: 28px;
+}
+
+/* Estilo para los botones de género */
+.genre-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.genre-button {
+    background-color: #ffffff;
+    color: #116BA3;
+    border: none;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.genre-button:hover {
+    background-color: #A2B2EE;
+}
+
+/* Estilo para la sección de libros recomendados */
+.book-recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo para las tarjetas de libros */
+.book-card {
+    background-color: #fff;
+    border: 2px solid #116BA3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.377);
+}
+
+.book-card h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.book-card a {
+    text-decoration: none;
+    color: #116BA3;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.book-card a:hover {
+    color: #000;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #116BA3;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #c69d7e;
+    border-radius: 15px;
+}
+
+/* Estilo para los íconos de redes sociales en el footer */
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: auto;
+}
+
+/* Estilos adicionales para responsividad */
+@media screen and (max-width: 868px) {
+    .book-recommendations {
+        justify-content: center;
+    }
+
+    .book-card {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    .genre-selection {
+        background-size: cover;
+    }
+
+    .genre-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .genre-button {
+        margin: 5px;
+    }
+
+    .book-recommendations {
+        padding: 10px;
+    }
+
+    .book-card {
+        width: 100%;
+    }
+
+    /* Nuevos estilos para pestaña desplegable en dispositivos móviles */
+    .tabs {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .tab {
+        background-color: #f2f2f2;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .tab-content {
+        margin-top: 20px;
+    }
+}

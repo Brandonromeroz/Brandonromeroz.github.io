@@ -1,0 +1,102 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biblioteca Digital</title>
+        <link rel="stylesheet" href="Styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <a href="index.html"> 
+                    <img src="img/logo upt.png" alt="Logo de tu biblioteca" id="logo">
+                </a>
+                <h1>Biblioteca Digital</h1>
+                <div class="dropdown-container" onclick="toggleDropdown()">
+                    <button class="dropbtn">
+                        <img src="img/message-square-detail-solid-24.png" alt="Flecha">
+                        &#9662; 
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Ayuda</a>
+                        <a href="#">Contacto</a>
+                        <a href="#">Sobre Nosotros</a>
+                        <a href="#" id="searchOption" onclick="performSearch()">Buscar</a>
+                        <div class="search-field" id="searchField">
+                            <input type="text" placeholder="Buscar libros...">
+                            <button onclick="performSearch()">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+
+        <main>
+            <section class="genre-selection">
+                <h2>Selecciona tu carrera:</h2>
+                <div class="genre-buttons">
+                    <button class="genre-button" value="Ingeniería en Software"><a href="carrera-software.html">Ingeniería en Software</a></button>
+                    <button class="genre-button"><a href="carrera-negocios.html">Licenciatura en Negocios</a></button>
+                    <button class="genre-button" value="Ingeniería en finanzas"><a href="carrera-financiera.html">Ingeniería en finanzas</a></button>
+                    <button class="genre-button" value="Ingeniería en mecánica"><a href="carrera-mecanica.html">Ingeniería en mecánica</a></button>
+                    <button class="genre-button" value="Ingeniería en manufactura"><a href="carrera-manufactura.html">Ingeniería en manufactura</a></button>
+                </div>
+            </section>
+
+            <section class="book-recommendations">
+                <div class="book-card">
+                    <a href="https://thixalongmy.haugiang.gov.vn/media/1175/clean_code.pdf">
+                        <h3>Clean Code: A Handbook of Agile Software Craftsmanship</h3>
+                        <p>Autor: Robert C. Martin</p>
+                        <p>Género: Informática</p>
+                        <p>Se habla acerca de cómo generar código que al estar bien estructurado sea fácil de entender y, por tanto, sea fácil de mantener.</p>
+                    </a>
+                </div>
+                <div class="book-card">
+                    <a href="https://core.ac.uk/download/pdf/158348444.pdf">
+                        <h3>Diseño de Elementos</h3>
+                        <p>Autor: Robert L. Mott</p>
+                        <p>Género: Mecánica</p>
+                        <p>Consiste en el diseño final aprobado de un elemento de máquina, producto, máquina o proceso productivo.</p>
+                    </a>
+                </div>
+                <div class="book-card">
+                    <a href="https://www.serlib.com/pdflibros/9788483068137.pdf">
+                        <h3>El Triunfo del Dinero</h3>
+                        <p>Autor: Niall Ferguson</p>
+                        <p>Género: Negocios</p>
+                        <p>Hace un recorrido histórico del dinero desde sus orígenes hasta llegar a la crisis financiera 2007 - 2008.</p>
+                    </a>
+                </div>
+                <div class="book-card">
+                    <a href="https://proassetspdlcom.cdnstatics2.com/usuaris/libros_contenido/arxius/50/49864_invierte_con_poco.pdf">
+                        <h3>Invierte un Poco</h3>
+                        <p>Autor: Natalia De Santiago</p>
+                        <p>Género: Finanzas</p>
+                        <p>Todo sobre finanzas y manejo economico.</p>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Biblioteca Escolar</p>
+            <p>Creadores: Brandon Romero y Brayan Yahir</p>
+            <div class="social-links">
+                <a href="https://github.com/Brandonromeroz" target="_blank" rel="noopener noreferrer">
+                    <img src="img/GitHub-Logo.png" alt="GitHub">
+                </a>
+                <a href="https://www.instagram.com/imbrandooon/" target="_blank" rel="noopener noreferrer">
+                    <img src="img/insta.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@BrandonYRubenTV" target="_blank" rel="noopener noreferrer">
+                    <img src="img/youtube.webp" alt="YouTube">
+                </a>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+    </html>
